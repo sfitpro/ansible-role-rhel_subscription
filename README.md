@@ -28,18 +28,20 @@ None.
 Example Playbook
 ----------------
 
-    - hosts: servers
+```yaml
+- hosts: servers
 
-      tasks:
-        - name: config rhel subscription
-          include_role:
-            name: sfitpro.rhel_subscription
-            apply:
-              tags:
-                - rhel
-          when: ansible_distribution == "RedHat"
+  tasks:
+    - name: config rhel subscription
+      include_role:
+        name: sfitpro.rhel_subscription
+        apply:
           tags:
             - rhel
+      when: ansible_distribution == "RedHat"
+      tags:
+        - rhel
+```
 
 License
 -------
