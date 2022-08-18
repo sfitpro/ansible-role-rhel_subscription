@@ -33,7 +33,7 @@ Example Playbook
       tasks:
         - name: config rhel subscription
           include_role:
-            name: sfitpro.rhel-subscription
+            name: sfitpro.rhel_subscription
             apply:
               tags:
                 - rhel
