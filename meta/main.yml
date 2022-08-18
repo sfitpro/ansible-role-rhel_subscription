@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: rhel_subscription
   author: Eddie Lu
-  description: Register RHEL system and attach to a subscription using Activation Key
+  description: Register RHEL system and attach to a subscription with Activation Key
   company: SFITPro
 
   # If the issue tracker for your role is not on github, uncomment the
