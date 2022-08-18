@@ -1,0 +1,4 @@
+---
+# defaults file for rhel_subscription
+rhel_org_id: 1234567
+rhel_activationkey: my_rhel_activation_key

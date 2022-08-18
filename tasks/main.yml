@@ -1,0 +1,8 @@
+---
+# tasks file for rhel_subscription
+- name: register system and attach subscription
+  become: true
+  community.general.redhat_subscription:
+    activationkey: "{{ rhel_activationkey }}"
+    org_id: "{{ rhel_org_id }}"
+    state: present
